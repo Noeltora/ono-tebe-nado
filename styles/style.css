@@ -6,7 +6,10 @@ html {
   width: 1052px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  margin: 92px 24px;
+  margin-top: 92px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 96px;
   justify-items: stretch;
   background-color: rgb(255, 255, 255);
   font-size: 18px;
@@ -15,17 +18,17 @@ html {
 .header_menu {
   display: flex;
   margin-top: 44px;
-  margin-right: 37px;
+  margin-right: 35px;
   justify-content: flex-end;
   font-weight: 400;
   font-family: Raleway, sans-serif;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 .header_menu-list {
   display: flex;
   flex-direction: row;
-  gap: 34px;
+  gap: 30px;
   list-style: circle;
 }
 
@@ -35,6 +38,12 @@ html {
 
 .header__links-list-item_no-bullit {
   list-style: none;
+  padding-right: 1.5px;
+}
+
+.header_menu-link {
+  text-decoration: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .header_logo {
@@ -43,7 +52,8 @@ html {
 }
 
 .header_logo-image {
-  width: 90%;
+  width: 148px;
+  height: 105px;
 }
 
 .address {
@@ -51,11 +61,12 @@ html {
   display: flex;
   font-style: normal;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   justify-self: end;
   font-size: 18px;
-  margin-right: 70px;
+  margin-right: 64px;
+  margin-top: 5px;
 }
 
 .address_info {
@@ -64,6 +75,10 @@ html {
   border-bottom: 2px solid rgb(0, 0, 0);
   padding-bottom: 1px;
   line-height: 1.2;
+}
+
+.line_height_style_address {
+  line-height: 1.35;
 }
 
 .cover {
@@ -152,7 +167,8 @@ html {
 }
 
 .lots_heading {
-  width: 121px;
+  max-width: 121px;
+  width: 100%;
   color: black;
   text-align: left;
   font-size: 40px;
@@ -164,7 +180,7 @@ html {
 
 .lots_card-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
   gap: 25px;
@@ -177,9 +193,13 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  color: #fff;
+}
+
+.card_size {
   width: 334px;
   height: 563px;
-  color: #fff;
   flex-grow: 1;
 }
 
